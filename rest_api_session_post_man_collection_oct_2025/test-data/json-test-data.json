@@ -1,0 +1,17 @@
+[
+	{
+		"shortDescription": "RESTAPIJUL2025 1",
+		"description": "Create new record using POST with body 1",
+		"category": "Hardware"
+	},
+	{
+		"shortDescription": "RESTAPIJUL2025 2",
+		"description": "Create new record using POST with body 2",
+		"category": "software"
+	},
+	{
+		"shortDescription": "RESTAPIJUL2025 3",
+		"description": "Create new record using POST with body 3",
+		"category": "Hardware"
+	}
+]

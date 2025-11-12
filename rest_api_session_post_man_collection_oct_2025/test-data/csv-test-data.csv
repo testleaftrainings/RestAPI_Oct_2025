@@ -1,0 +1,3 @@
+shortDescription,description,category,active,company
+RESTAPIJUL2025 1,Create new record using POST with body 1,hardware,true,abc
+RESTAPIJUL2025 2,Create new record using POST with body 2,software,true,testleaf
