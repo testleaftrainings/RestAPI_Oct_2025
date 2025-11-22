@@ -3,11 +3,41 @@
 	<groupId>com.rest.api.session.oct.2025</groupId>
 	<artifactId>rest-api-session-oct-2025</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<dependencies>		
+	<dependencies>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>5.5.6</version>			
+			<version>5.5.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.13.2</version>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jsonschema2pojo</groupId>
+				<artifactId>jsonschema2pojo-maven-plugin</artifactId>
+				<version>1.2.2</version>
+				<configuration>
+					<sourceType>json</sourceType>
+					<sourceDirectory>${basedir}/src/main/resources/servicenow-response</sourceDirectory>
+					<targetPackage>servicenow.response.pojos</targetPackage>
+					<outputDirectory>${basedir}/src/main/java</outputDirectory>
+					<annotationStyle>gson</annotationStyle>
+					<includeHashcodeAndEquals>false</includeHashcodeAndEquals>
+					<includeToString>false</includeToString>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

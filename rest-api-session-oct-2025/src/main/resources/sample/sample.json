@@ -1,0 +1,15 @@
+{
+	"first name": "Karthikeyan",
+	"addreess": [
+		{
+			"streetName": "new street",
+			"state": "",
+			"country": "India"
+		},
+		{
+			"streetName": "2nd street",
+			"state": "",
+			"country": "India"
+		}
+	]
+}
