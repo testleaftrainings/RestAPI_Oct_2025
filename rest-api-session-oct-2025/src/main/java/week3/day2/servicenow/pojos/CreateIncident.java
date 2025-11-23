@@ -1,18 +1,12 @@
 package week3.day2.servicenow.pojos;
 
-import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class CreateIncident {
 
-    @SerializedName("short_description")
-    @Expose
-    private String shortDescription;
-    @SerializedName("description")
-    @Expose
-    private String description;
-    @SerializedName("category")
-    @Expose
+    @SerializedName("short_description")    
+    private String shortDescription;   
+    private String description;    
     private String category;
    
 

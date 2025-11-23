@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import sample.serialization.pojos.Addreess;
 import sample.serialization.pojos.Sample;
+import week3.day2.servicenow.pojos.CreateIncident;
+import week3.day2.servicenow.pojos.CreateIncidentSerializer;
 
 public class ToUnderStandTheSerialization {
 
@@ -29,6 +32,16 @@ public class ToUnderStandTheSerialization {
 		sample.setAddreess(list);
 		
 		System.out.println(new Gson().toJson(sample));
+		
+		CreateIncident incident = new CreateIncident();
+		incident.setShortDescription("RESTAPIOCT2025");
+		incident.setCategory("harware");
+		
+		Gson gson = new GsonBuilder()
+		      .registerTypeAdapter(CreateIncident.class, new CreateIncidentSerializer())
+		      .create();
+		
+		System.out.println(gson.toJson(incident));
 		
 	}
 

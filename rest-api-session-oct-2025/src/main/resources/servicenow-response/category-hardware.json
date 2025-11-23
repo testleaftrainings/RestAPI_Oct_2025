@@ -1,25 +1,37 @@
 {
-    "result": [
-        {
-            "sys_id": "1c832706732023002728660c4cf6a7b9",
-            "number": "INC0009002",
-            "short_description": "My computer is not detecting the headphone device",
-            "description": "My computer is not detecting the headphone device. It could be an issue with the USB port.",
-            "category": "Hardware"
-        },
-        {
-            "sys_id": "46f1784ba9fe19810018aa27fbb23482",
-            "number": "INC0000026",
-            "short_description": "Seem to have an issue with my hard drive...",
-            "description": "Hard drive has been making a loud grinding noise for the last two days.",
-            "category": "hardware"
-        },
-        {
-            "sys_id": "46f6ede0a9fe198100e10154c34a0c2a",
-            "number": "INC0000030",
-            "short_description": "Lost connection to the wireless network",
-            "description": "Can't connect to wifi. Keep getting \"unable to join network\" message.",
-            "category": "hardware"
-        }
-    ]
+	"result": [
+		{
+			"sys_id": "1c832706732023002728660c4cf6a7b9",
+			"number": "INC0009002",
+			"short_description": "My computer is not detecting the headphone device",
+			"description": "My computer is not detecting the headphone device. It could be an issue with the USB port.",
+			"category": "Hardware"
+		},
+		{
+			"sys_id": "46f1784ba9fe19810018aa27fbb23482",
+			"number": "INC0000026",
+			"short_description": "Seem to have an issue with my hard drive...",
+			"description": "Hard drive has been making a loud grinding noise for the last two days.",
+			"category": "hardware"
+		},
+		{
+			"sys_id": "46f6ede0a9fe198100e10154c34a0c2a",
+			"number": "INC0000030",
+			"short_description": "Lost connection to the wireless network",
+			"description": "Can't connect to wifi. Keep getting \"unable to join network\" message.",
+			"category": "hardware"
+		}
+	],
+	"addreess": [
+		{
+			"street": "",
+			"state": "",
+			"country": ""
+		},
+		{
+			"street": "",
+			"state": "",
+			"country": ""
+		}
+	]
 }
