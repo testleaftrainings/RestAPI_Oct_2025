@@ -1,11 +1,13 @@
 package runner;
 
+import org.testng.annotations.DataProvider;
+
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		          features = {"src/test/java/features/refactor-incident.feature"},
-		          glue = {"step.defintions", "cucumber.hooks"},
+		          features = {"src/test/java/features/Incident.feature"},
+		          glue = {"step.defintions"},
 		          dryRun = false,
 		          plugin = {
 		        		    "pretty",
@@ -14,6 +16,12 @@ import io.cucumber.testng.CucumberOptions;
 		          },
 		          tags = ""
 		        )
-public class TestNGRunner extends AbstractTestNGCucumberTests {
+public class TestNGParallelRunner extends AbstractTestNGCucumberTests {
+	
+	@Override
+	@DataProvider(parallel = true)
+	public Object[][] scenarios() {		
+		return super.scenarios();
+	}
 
 }

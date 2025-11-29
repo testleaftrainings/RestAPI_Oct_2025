@@ -4,10 +4,11 @@ import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
+import testng.listeners.RetryFailedTest;
 
 public class ServicenowIncidentTableTest extends BaseClass {	
 	
-	@Test(priority = 1)
+	@Test(priority = 1, retryAnalyzer = RetryFailedTest.class)
 	public void createRecord() {
 		
 		createIncident.setShortDescription("RESTAPISESSIONOCT2025");
@@ -30,7 +31,7 @@ public class ServicenowIncidentTableTest extends BaseClass {
 		  .getString("result.sys_id");
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2, retryAnalyzer = RetryFailedTest.class)
 	public void getRecord() {
 		requestSpecification		  
 		  .pathParam("sys_id", sysId)		  
@@ -47,7 +48,7 @@ public class ServicenowIncidentTableTest extends BaseClass {
 		  
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3, retryAnalyzer = RetryFailedTest.class)
 	public void updateRecord() {
 		
 		updateIncident.setCategory("hardware");
@@ -70,7 +71,7 @@ public class ServicenowIncidentTableTest extends BaseClass {
 		
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 4, retryAnalyzer = RetryFailedTest.class)
 	public void deleteRecord() {
 		requestSpecification		  		  
 		  .pathParam("sys_id", sysId)

@@ -4,8 +4,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		          features = {"src/test/java/features/refactor-incident.feature"},
-		          glue = {"step.defintions", "cucumber.hooks"},
+		          features = {"@falied-scenarios.txt"},
+		          glue = {"step.defintions"},
 		          dryRun = false,
 		          plugin = {
 		        		    "pretty",
@@ -14,6 +14,6 @@ import io.cucumber.testng.CucumberOptions;
 		          },
 		          tags = ""
 		        )
-public class TestNGRunner extends AbstractTestNGCucumberTests {
+public class TestNGRetryRunner extends AbstractTestNGCucumberTests {
 
 }

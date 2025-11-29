@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import week3.day2.CreateIncidentPojo;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -14,6 +15,7 @@ public class IncidentServiceSteps {
 	
 	private RequestSpecification requestSpecification = given();
 	private Response response;
+	private CreateIncidentPojo incident = new CreateIncidentPojo();
 
 	@Given("user should set the base uri {string} of the incident table service")
 	public void user_should_set_the_base_uri_of_the_incident_table_service(String baseUri) {
@@ -25,7 +27,7 @@ public class IncidentServiceSteps {
 		requestSpecification.basePath(basePath);
 	}
 
-	@Given("user should set basi auth authencation username {string} and password {string} for the incident table service")
+	@Given("user should set basic auth authencation username {string} and password {string} for the incident table service")
 	public void user_should_set_basi_auth_authencation_username_and_password_for_the_incident_table_service(
 			String username, String password) {
 		requestSpecification.auth().basic(username, password);
@@ -50,6 +52,37 @@ public class IncidentServiceSteps {
 	@Then("user should get the response in the JSON format")
 	public void user_should_get_the_response_in_the_json_format() {
 		response.then().contentType(ContentType.JSON);
+	}
+	
+	@Then("user should get the response in the XML format")
+	public void user_should_get_the_response_in_the_xml_format() {
+	    response.then().contentType(ContentType.XML);
+	}
+
+	
+	@Given("user should add header with key as {string} and value as {string}")
+	public void user_should_add_header_with_key_as_and_value_as(String key, String value) {
+	    requestSpecification.header(key, value);
+	}
+	
+	@When("user hit post method of the {string} table service to create new record")
+	public void user_hit_post_method_of_the_table_service_to_create_new_record(String tableName) {
+		response = requestSpecification.log().all().post(tableName);
+	}
+	
+	@When("user should add shortdescription as {string} in the request body")
+	public void user_should_add_shortdescription_as_in_the_request_body(String shortDescription) {
+	    incident.setShort_description(shortDescription);
+	}
+	
+	@When("user should add category as {string} in the request body")
+	public void user_should_add_category_as_in_the_request_body(String category) {
+	    incident.setCategory(category);
+	}
+	
+	@When("user hit post method of the {string} table service with JSON payload to create new record")
+	public void user_hit_post_method_of_the_table_service_with_json_payload_to_create_new_record(String tableName) {
+	   response = requestSpecification.body(incident).post(tableName);
 	}
 
 }
