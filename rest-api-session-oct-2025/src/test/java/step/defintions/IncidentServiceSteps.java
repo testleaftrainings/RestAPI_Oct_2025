@@ -1,5 +1,6 @@
 package step.defintions;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,6 +11,9 @@ import week3.day2.CreateIncidentPojo;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
+
+import java.util.List;
+import java.util.Map;
 
 public class IncidentServiceSteps {
 	
@@ -84,5 +88,28 @@ public class IncidentServiceSteps {
 	public void user_hit_post_method_of_the_table_service_with_json_payload_to_create_new_record(String tableName) {
 	   response = requestSpecification.body(incident).post(tableName);
 	}
-
+	
+	@Then("user should validate the response component with the expected value")
+	public void user_should_validate_the_response_component_with_the_expected_value(DataTable dataTable) {
+		List<Map<String, String>> maps = dataTable.asMaps();
+		for (Map<String, String> map : maps) {
+			response.then().assertThat().statusCode(Integer.parseInt(map.get("statusCode")));
+			response.then().assertThat().statusLine(containsString(map.get("statusLine")));
+			if(map.get("contentType").equalsIgnoreCase("JSON")) {
+				response.then().assertThat().contentType(ContentType.JSON);
+			} else {
+				response.then().assertThat().contentType(ContentType.XML);
+			}
+		}
+	}
+	
+	@When("user should add the relevant value to create record as request paylod")
+	public void user_should_add_the_relevant_value_to_create_record_as_request_paylod(DataTable dataTable) {
+	    	List<List<String>> lists = dataTable.asLists();
+	    for (List<String> list : lists) {
+	    	    incident.setShort_description(list.get(0));			
+			incident.setCategory(list.get(1));
+		}	    
+	}
+	
 }
