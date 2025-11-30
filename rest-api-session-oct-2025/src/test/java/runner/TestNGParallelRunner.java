@@ -6,8 +6,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		          features = {"src/test/java/features/Incident.feature"},
-		          glue = {"step.defintions"},
+		          features = {"src/test/java/features/refactor-incident.feature:24:64"},
+		          glue = {"step.definitions.som"},
 		          dryRun = false,
 		          plugin = {
 		        		    "pretty",

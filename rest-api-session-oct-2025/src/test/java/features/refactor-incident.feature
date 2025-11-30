@@ -27,6 +27,7 @@ When user hit post method of the "/incident" table service to create new record
 Then user should validate the response component with the expected value
 | statusCode | statusLine | contentType      |
 | 201        | Created    | JSON             |
+And user extract the sysid from the response body
 
 @regression
 Scenario Outline: Validate user should able to create new incident record with JSON request body
@@ -59,3 +60,10 @@ Examples:
 | RESTAPISESSIONOCT2025-1 | software |
 | RESTAPISESSIONOCT2025-2 | hardware |
 | RESTAPISESSIONOCT2025-3 | inquiry  |
+
+Scenario: Validate user should able to fecth given sysid record from the incident table
+Given user fetch the sysId and set the path parameter which was already created from POST method
+When user hit get method of the "/incident/" table service to get a give sysId records
+Then user should validate the response component with the expected value
+| statusCode | statusLine | contentType      |
+| 200        | OK         | JSON             |
