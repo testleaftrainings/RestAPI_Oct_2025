@@ -16,16 +16,16 @@ booker.password=**booker-api-password**
 # Allure Report Integration
 - Step 1: Add depenceies for TestNG and Cucumber in pom.xml
 - Step 2: Create one properties file as name **"allure.properties"** under **"src/test/resources"** folder
-- Step 3: Install allure npm package globally using command **"npm install -g allure"**
+- Step 3: Install allure npm package globally using command **"npm install -g allureallure-commandline"**
 - Step 4: Confirm the allure report installaisation type below command **"allure --version"**
 - Step 5: To generate the html report **"allure generate allure-results -o reports/allure-html-report --clean"**
 - Step 6: In-order to view the allure html report we need to type **"allure serve"**
-- Step 7: Add below package name in the @CucumberOptions plugin porperty **"io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm"**
+- Step 7: Add below package name in the @CucumberOptions plugin porperty **"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"**
 
 ```
 <!-- Define the version of Allure you want to use via the allure.version property -->
 <properties>
-    <allure.version>2.24.0</allure.version>
+    <allure.version>2.31.0</allure.version>
 </properties>
 
 <!-- Add allure-bom to dependency management to ensure correct versions of all the dependencies are used -->
@@ -43,10 +43,19 @@ booker.password=**booker-api-password**
 
 <!-- Add necessary Allure dependencies to dependencies section -->
 <dependencies>
-    <dependency>
-        <groupId>io.qameta.allure</groupId>
-        <artifactId>allure-testng</artifactId>
-        <scope>test</scope>
-    </dependency>
+        <dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-cucumber7-jvm</artifactId>	
+			<scope>test</scope>		
+		</dependency>
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<scope>test</scope>			
+		</dependency>
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-rest-assured</artifactId>			
+		</dependency>
 </dependencies>
 ```
