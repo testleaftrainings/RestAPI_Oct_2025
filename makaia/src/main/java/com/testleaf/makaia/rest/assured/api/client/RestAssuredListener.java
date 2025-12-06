@@ -1,4 +1,4 @@
-package com.testleaf.matchie.rest.assured.api.client;
+package com.testleaf.makaia.rest.assured.api.client;
 
 import org.json.JSONObject;
 
@@ -31,7 +31,6 @@ public class RestAssuredListener implements Filter {
 				         isRequestPayLoadNull(requestSpec.getBody()));
 		System.out.println("=====================================");
 		response.then().log().ifValidationFails(LogDetail.ALL, true);
-		//response.prettyPrint();
 		return response;
 	}
 	

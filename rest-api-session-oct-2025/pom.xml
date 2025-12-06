@@ -65,7 +65,7 @@
 				<configuration>
 					<sourceType>json</sourceType>
 					<sourceDirectory>${basedir}/src/main/resources/servicenow-response</sourceDirectory>
-					<targetPackage>week4.day2.sample.response.pojos</targetPackage>
+					<targetPackage>week5.day2.sample.response.pojos</targetPackage>
 					<outputDirectory>${basedir}/src/main/java</outputDirectory>
 					<annotationStyle>gson</annotationStyle>
 					<includeHashcodeAndEquals>false</includeHashcodeAndEquals>
