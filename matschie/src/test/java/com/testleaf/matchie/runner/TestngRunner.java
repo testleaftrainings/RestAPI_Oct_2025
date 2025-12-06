@@ -10,7 +10,8 @@ import io.cucumber.testng.CucumberOptions;
 		         plugin = {
 		        		 "pretty",
 		        		 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
-		         }
+		         },
+		         tags = ""
 		        )
 public class TestngRunner extends AbstractTestNGCucumberTests {
 

@@ -8,4 +8,4 @@ And user should set basic auth authencation username "admin" and password "e5!pR
 When user hit get method of the "/incident" table service to get all records
 Then user should see the status code as "200" in the repose
 And user should see the status line as "OK" in the repose
-And user should get the response in the JSON format
+And user should get the response in the "JSON" format

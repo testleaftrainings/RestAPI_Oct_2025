@@ -10,9 +10,11 @@ public class MyFirstRestAssuredCode {
 		           .basePath("api/now/table")
 		           .auth()
 		           .basic("admin", "e5!pRsPN%lH5")
+		           .log().all()
 		           .when()
 		           .get("/incident")
 		           .then()
+		           .log().all()
 		           .assertThat()
 		           .statusCode(200);
 	}
