@@ -1,0 +1,308 @@
+[
+    {
+        "accountNumber": 30112212,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-16T12:37:00.850Z",
+        "id": "68f0e6ec0030f7036cb1fad0",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 25235734,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-16T12:43:17.396Z",
+        "id": "68f0e8650030f7036cb1fad1",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 83847780,
+        "friendlyName": "Ardella",
+        "type": "checking",
+        "balance": 70,
+        "date": "2025-10-16T17:41:24.827Z",
+        "id": "68f12e44384c26004aace8c4",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 61816560,
+        "friendlyName": "Johan",
+        "type": "checking",
+        "balance": 430,
+        "date": "2025-10-16T17:51:46.530Z",
+        "id": "68f130b2384c26004aace8c7",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 59491762,
+        "friendlyName": "Brennon",
+        "type": "checking",
+        "balance": 100,
+        "date": "2025-10-16T17:56:48.818Z",
+        "id": "68f131e0384c26004aace8cb",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 76450452,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-23T12:28:15.785Z",
+        "id": "68fa1f5f13adce38c93681d9",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 71321766,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-23T12:38:03.698Z",
+        "id": "68fa21ab13adce38c93681db",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 50201057,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-23T12:45:08.138Z",
+        "id": "68fa235413adce38c93681dd",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 4446352,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-23T12:49:49.983Z",
+        "id": "68fa246d13adce38c93681de",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 710474,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-23T12:53:50.748Z",
+        "id": "68fa255e13adce38c93681e4",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 5126654,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T04:24:28.652Z",
+        "id": "68fc50fc13adce38c9368771",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 43711516,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T04:27:07.659Z",
+        "id": "68fc519b13adce38c9368772",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 25016056,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T09:33:41.361Z",
+        "id": "68fc997513adce38c93687be",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 52646432,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T09:57:35.671Z",
+        "id": "68fc9f0f13adce38c93687c6",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 40046466,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T11:42:36.619Z",
+        "id": "68fcb7ac13adce38c93687cf",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 16024442,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T11:44:47.378Z",
+        "id": "68fcb82f13adce38c93687d0",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 44215604,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T14:17:15.807Z",
+        "id": "68fcdbeb13adce38c93687e7",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 11410154,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T14:20:51.887Z",
+        "id": "68fcdcc313adce38c93687e8",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 17315732,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T14:24:02.113Z",
+        "id": "68fcdd8213adce38c93687e9",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 42737326,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T14:26:07.307Z",
+        "id": "68fcddff13adce38c93687ea",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 57562134,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T14:27:05.176Z",
+        "id": "68fcde3913adce38c93687eb",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 22674072,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T14:29:37.334Z",
+        "id": "68fcded113adce38c93687ec",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 36073454,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T14:30:56.280Z",
+        "id": "68fcdf2013adce38c93687ed",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 74551533,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T14:39:21.433Z",
+        "id": "68fce11913adce38c93687ee",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 44017726,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T16:23:56.931Z",
+        "id": "68fcf99c13adce38c93687f3",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 11242524,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T16:24:40.450Z",
+        "id": "68fcf9c813adce38c93687f4",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 32370352,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T16:25:58.857Z",
+        "id": "68fcfa1613adce38c93687f5",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 23353154,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T16:32:03.275Z",
+        "id": "68fcfb8313adce38c93687f6",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 72611602,
+        "friendlyName": "TEST Nick Name",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-25T16:34:07.359Z",
+        "id": "68fcfbff13adce38c93687f7",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 84536566,
+        "friendlyName": "Credit Card Account",
+        "type": "savings",
+        "balance": 149.83,
+        "date": "2025-10-25T17:14:49.100Z",
+        "id": "68fd058913adce38c93687fa",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 75966324,
+        "friendlyName": "Checking Account",
+        "type": "savings",
+        "balance": 108.87,
+        "date": "2025-10-25T17:15:09.662Z",
+        "id": "68fd059d13adce38c93687fb",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 77273032,
+        "friendlyName": "Test Cheque Account",
+        "type": "checking",
+        "balance": 100,
+        "date": "2025-10-25T17:39:58.552Z",
+        "id": "68fd0b6e13adce38c93687fc",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 40617741,
+        "friendlyName": "test202554",
+        "type": "savings",
+        "balance": 100,
+        "date": "2025-10-26T11:25:54.010Z",
+        "id": "68fe054213adce38c9368a46",
+        "userId": "64290731ba9f8a0047adacfc"
+    },
+    {
+        "accountNumber": 71516167,
+        "friendlyName": "tst3w64747sesu",
+        "type": "checking",
+        "balance": 100,
+        "date": "2025-10-26T11:53:13.055Z",
+        "id": "68fe0ba913adce38c9368a47",
+        "userId": "64290731ba9f8a0047adacfc"
+    }
+]
