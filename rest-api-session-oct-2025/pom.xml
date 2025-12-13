@@ -19,11 +19,16 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
+			<version>5.5.6</version>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-schema-validator</artifactId>
 			<version>5.5.6</version>
 		</dependency>
 		<dependency>
@@ -60,6 +65,16 @@
 			<artifactId>wiremock</artifactId>
 			<version>3.13.2</version>			
 		</dependency>
+		<dependency>
+			<groupId>com.github.victools</groupId>
+			<artifactId>jsonschema-generator</artifactId>
+			<version>4.38.0</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20250517</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -69,8 +84,8 @@
 				<version>1.2.2</version>
 				<configuration>
 					<sourceType>json</sourceType>
-					<sourceDirectory>${basedir}/src/main/resources/servicenow-response</sourceDirectory>
-					<targetPackage>week5.day2.sample.response.pojos</targetPackage>
+					<sourceDirectory>${basedir}/src/main/resources/FakeRESTApi</sourceDirectory>
+					<targetPackage>week6.day2.fakerest.api.response.pojos</targetPackage>
 					<outputDirectory>${basedir}/src/main/java</outputDirectory>
 					<annotationStyle>gson</annotationStyle>
 					<includeHashcodeAndEquals>false</includeHashcodeAndEquals>

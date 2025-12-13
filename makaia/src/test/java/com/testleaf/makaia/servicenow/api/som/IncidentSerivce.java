@@ -12,6 +12,7 @@ import com.testleaf.makaia.servicenow.deserialization.pojos.TableApiJsonArray;
 import com.testleaf.makaia.servicenow.serialization.pojos.CreateIncident;
 import com.testleaf.makaia.servicenow.serialization.pojos.UpdateIncident;
 
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 
 public class IncidentSerivce extends ServiceNow {
@@ -24,6 +25,11 @@ public class IncidentSerivce extends ServiceNow {
 	
 	public IncidentSerivce fetchIncidentRecords() {
 		response = apiClient.get(requestBuilder, TABLE_NAME);
+		return this;
+	}
+	
+	public IncidentSerivce fetchIncidentRecords(RequestSpecBuilder requestSpecBuilder) {
+		response = apiClient.get(requestSpecBuilder, TABLE_NAME);
 		return this;
 	}
 	

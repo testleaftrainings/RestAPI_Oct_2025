@@ -18,6 +18,11 @@ public class IncidentService {
 		response = apiClient.get(requestSpecBuilder, TABLENAME);
 	}
 	
+	public void getRecordsBasedOnCategory(RequestSpecBuilder requestSpecBuilder, String categoryName) {
+		response = apiClient.get(requestSpecBuilder
+				               .addQueryParam("category", categoryName), TABLENAME);
+	}
+	
 	public void validateStatusCode(String statusCode) {
 		response.then().assertThat().statusCode(Integer.parseInt(statusCode));
 	}
